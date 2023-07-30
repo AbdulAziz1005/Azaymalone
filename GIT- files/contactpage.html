@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="contact.css">
+      <style>
+            /* Add CSS styles for the image carousel */
+            .images {
+                  overflow: hidden;
+                  white-space: nowrap;
+            }
+            .images img {
+                  display: inline-block;
+                  margin-right: 10px;
+                  vertical-align: top;
+            }
+            .images li {
+                  display: inline-block;
+            }
+      </style>
+</head>
+
+<body>
+      <nav>
+            <ul>
+                  <li><a href="homepage.html">Home</a></li>
+                  <li><a href="menupage.html">Menu</a></li>
+                  <li><a href="aboutpage.html">About</a></li>
+                  <li><a href="contactpage.html">Contact</a></li>
+            </ul>
+      </nav>
+      <section id="home">
+            <h1> Your Dinner Court</h1>
+            <p>Welcome to our delicious restaurant!</p>
+      </section>
+      <section id="contact">
+            <h2>Contact Us to place your order</h2>
+            <p>Email: abdulazizhamid@gmail.com</p>
+            <p>Phone: +223 240 646 591</p>
+            <p>Address: Akweteman N115 WALLABY CL
+                  <br>
+                  GA-252-4838
+            </p>
+      </section>
+
+      <footer>
+            <p>&copy; 2023 Your Dinner Court. All rights reserved.</p>
+      </footer>
+
+      <a href="#" class="BackToTop" onclick="backToTop()">Back to Top</a>
+
+      <script>
+            // Smooth scrolling
+            const smoothScroll = (target) => {
+                  const element = document.querySelector(target);
+                  const offsetTop = element.getBoundingClientRect().top;
+                  window.scrollBy({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                  });
+            };
+
+            // Add smooth scrolling to navigation links
+            document.querySelectorAll('nav a').forEach(link => {
+                  link.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const target = e.target.getAttribute('href');
+                        smoothScroll(target);
+                  });
+            });
+
+            // Back-to-top button functionality
+            const backToTop = () => {
+                  window.scroll({ top: 0, behavior: 'smooth' });
+            };
+      </script>
+
+</body>
+</html>

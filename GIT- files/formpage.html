@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="form.css">
+</head>
+<body>
+      <nav>
+            <ul>
+                  <li><a href="aboutpage.html">Home</a></li>
+                  <li><a href="menupage.html">Menu</a></li>
+                  <li><a href="aboutpage.html">About</a></li>
+                  <li><a href="contactpage.html">Contact</a></li>
+            </ul>
+      </nav>
+      <section id="home">
+            <h1> Your Dinner Court</h1>
+            <p>Welcome to our delicious restaurant!</p>
+      </section>
+      <br><br><br><br>
+      <section class="form">
+            <h3>Enter your details to Order Your preferred Food</h3>
+            <form action="/submit_order" method="post">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" required><br><br>
+
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required><br><br>
+
+                  <label for="Phone">Phone</label>
+                  <input type="tel" id="Phone" name="Phone" required><br><br>
+                  
+                  <label for="quantity">Quantity</label>
+                  <input type="number" id="quantity" name="quantity" min="1" required><br><br>
+
+                  <label for="special_request">Special Request</label>
+                  <textarea name="special_request" id="special_request" cols="30" rows="2"></textarea><br><br>
+
+                  <label for=""><h3>Form Of Payment</h3></label><br><br>
+                  <label for="mobile_money">Moblie money</label>
+                  <input type="radio" id="debit_card" name="payment_method" value="mobile_money" required><br><br>
+
+                  <label for="debit_card">Debit Card</label>
+                  <input type="radio" id="debit_card" name="payment_method" value="debit_card" required><br><br>
+
+                  <input class="submit" type="submit" value="Place order">
+            </form>
+      </section>
+      <br><br>
+      <footer>
+            <p>&copy; 2023 Your Dinner Court. All rights reserved.</p>
+      </footer>
+
+      <a href="#" class="BackToTop" onclick="backToTop()">Back to Top</a>
+
+      <script>
+            // Smooth scrolling
+            const smoothScroll = (target) => {
+                  const element = document.querySelector(target);
+                  const offsetTop = element.getBoundingClientRect().top;
+                  window.scrollBy({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                  });
+            };
+
+            // Add smooth scrolling to navigation links
+            document.querySelectorAll('nav a').forEach(link => {
+                  link.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const target = e.target.getAttribute('href');
+                        smoothScroll(target);
+                  });
+            });
+
+            // Back-to-top button functionality
+            const backToTop = () => {
+                  window.scroll({ top: 0, behavior: 'smooth' });
+            };
+      </script>
+
+</body>
+</html>

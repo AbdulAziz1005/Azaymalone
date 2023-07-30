@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="home.css">
+      <style>
+            /* Add CSS styles for the image carousel */
+            .images {
+                  overflow: hidden;
+                  white-space: nowrap;
+            }
+            .images img {
+                  display: inline-block;
+                  margin-right: 10px;
+                  vertical-align: top;
+            }
+            .images li {
+                  display: inline-block;
+            }
+      </style>
+</head>
+
+<body>
+      <nav>
+            <ul>
+                  <li><a href="aboutpage.html">Home</a></li>
+                  <li><a href="menupage.html">Menu</a></li>
+                  <li><a href="aboutpage.html">About</a></li>
+                  <li><a href="contactpage.html">Contact</a></li>
+            </ul>
+      </nav>
+      <section id="home">
+            <h1> Your Dinner Court</h1>
+            <p>Welcome to our delicious restaurant!</p>
+      </section>
+      <section id="about">
+            <h2>About Us</h2>
+            <p>We serve you a delicious meal.</p>
+            <p>Taste it, love it.</p>
+
+            <!-- Image Carousel -->
+            <div class="images">
+                  <ul>
+                        <li><img src="Banku with tilatia.WEBP" alt="Banku with tilatia" width="200px" height="200px"></li>
+                         <li>
+                              <img src="Beans and Gari 2.JPG" alt="Beans and Gari" width="200px" height="200px">
+                        </li>
+                        <li>
+                              <img src="Diehuo.JPG" alt="Diehuo" width="200px" height="200px">
+                        </li>
+                        <li>
+                              <img src="Fante kenkey.JPG" alt="Fante kenkey" width="200px " height="200px">
+                        <li>
+                              <img src="Fufu.JPG" alt="Fufu" width="200px " height="200px">
+                        </li>
+                        <li>
+                              <img src="Waakye 2.JPG" alt="Waakye" width="200px " height="200px">
+                        <li>
+                              <img src="Plantain with kontomire stew.JPG" alt="Plantain with kontomire stew"
+                                    width="200px " height="200px">
+                        </li>
+                        <li>
+                              <img src="Yam with kontomire stew.WEBP" alt="Yam with kontomire stew" width="200px "
+                                    height="200px">
+                        </li>
+                        <li>
+                              <img src="Fufu.WEBP" alt="Beans and Gari" width="200px " height="200px">
+                        </li>
+                        <li>
+                              <img src="Beans and Gari.JPG" alt="Beans and Gari" width="200px " height="200px">
+                  </ul>
+            </div>
+
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores facilis, nihil recusandae aspernatur
+                  incidunt repellendus ad vero distinctio velit deleniti commodi aut corrupti eos necessitatibus at
+                  itaque reprehenderit perferendis saepe minima laborum doloremque illo voluptate nulla? Dicta nemo
+                  quisquam, exercitationem at commodi culpa natus doloremque rerum. Recusandae voluptas architecto, eius
+                  veniam neque sed distinctio illo, eum labore eveniet incidunt, nihil pariatur. Voluptatum repudiandae
+                  repellat dignissimos aliquid, dolore doloribus voluptas accusamus ratione corporis ipsa, ducimus
+                  laborum. Rerum, hic minus quas sunt laudantium velit ea sequi molestias ipsam esse error voluptas a
+                  dignissimos fuga debitis. Obcaecati voluptates corrupti sapiente delectus cum sequi.Z Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Dicta repellat, at ratione fugiat natus sapiente eaque
+                  possimus ut cum quidem omnis dolor, est distinctio? Quisquam repellat quo dolor ipsa. Ad.</p>
+      </section>
+      <section>
+            <div class="order">
+                  <a href="menupage.html">CLICK HERE TO ORDER</a>
+            </div>
+      </section>
+      <section id="contact">
+            <h2>Contact Us to place your order</h2>
+            <p>Email: abdulazizhamid@gmail.com</p>
+            <p>Phone: +223 240 646 591</p>
+            <p>Address: Akweteman N115 WALLABY CL
+                  <br>
+                  GA-252-4838
+            </p>
+      </section>
+
+      <footer>
+            <p>&copy; 2023 Your Dinner Court. All rights reserved.</p>
+      </footer>
+
+      <a href="#" class="BackToTop" onclick="backToTop()">Back to Top</a>
+
+      <script>
+            // Smooth scrolling
+            const smoothScroll = (target) => {
+                  const element = document.querySelector(target);
+                  const offsetTop = element.getBoundingClientRect().top;
+                  window.scrollBy({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                  });
+            };
+
+            // Add smooth scrolling to navigation links
+            document.querySelectorAll('nav a').forEach(link => {
+                  link.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const target = e.target.getAttribute('href');
+                        smoothScroll(target);
+                  });
+            });
+
+            // Back-to-top button functionality
+            const backToTop = () => {
+                  window.scroll({ top: 0, behavior: 'smooth' });
+            };
+      </script>
+
+</body>
+</html>

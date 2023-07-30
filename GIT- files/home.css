@@ -1,0 +1,116 @@
+body {
+      margin: 0;
+      padding: 0;
+      background-color: #581f1f;
+      /* background-image: url(Background.JPG); */
+      background-size: cover ;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+  }
+  body h1, h2, h3, p, ul, li {
+    
+  }
+  
+  body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+  }
+  nav {
+      background-color: #333;
+      color: #824747;
+      padding: 10px;
+  }
+
+  
+  nav li {
+      display: inline-block;
+      margin-right: 20px;
+  }
+  
+  nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px;
+      border: 1px hsl(0, 5%, 18%)   solid;
+  }
+  
+  nav a:hover {
+      border-bottom: 2px solid #fff;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  #home {
+      text-align: center;
+      padding: 80px;
+      border: solid hsl(0, 5%, 18%) 5px;
+      border-radius: 100%;
+      margin: 5% 20%;
+      background-color: #824747;
+      box-shadow: 0 0 5px #fff;
+  }
+  
+  #home h1 {
+      font-size: 50px;
+      margin-bottom: 20px;
+  }
+  #about {
+      padding: 2%;
+      text-align: center;
+      color: rgb(233, 231, 230);
+  }
+  #contact {
+    text-align: center;
+    padding: 50px 50px;
+    margin: 50px 50px;
+  }
+  #contact h2 {
+    color: #35860c;
+    margin: 0 300px;
+  }
+  #contact p {
+    border: #ae9c9c;
+    margin: 0 400px;
+    display: inline-block;
+  }
+ div {
+    padding: 40%;
+    margin: 100px;
+    text-align: center;
+ }
+ div a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5%;
+    border: #302b2b 5px solid;
+    border-radius: 50%;
+    background-color:#824747;
+ }
+ .images li {
+    display: inline-block;
+  }
+  #contact {
+      padding: 30px;
+      text-align: center;
+  }
+  div {
+    padding: 2% 1%;
+  }
+  footer {
+    text-align: center;
+    color: #35860c;
+    padding: 10px;
+    background-color: #322121;
+  }
+  body.scrolling #BackToTop {
+    display: block;
+  }
+  .BackToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: none;
+  }
